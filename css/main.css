@@ -1,0 +1,51 @@
+/* LESS Document */
+
+
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	background-color: #b81c22;
+	padding: 1rem 0 0;
+	border-bottom: 1px solid #8C1518;
+}
+
+header h1 {
+	font-size: 0.85rem;
+	margin: 0;
+	text-align: center;
+	line-height: 0;
+}
+
+header h1 img {
+	max-width: 30%;
+	margin-bottom: 1rem;
+}
+
+nav ul {
+	padding: 0;
+	margin: 2.5rem 0;
+	text-align: center;
+}
+
+nav li {
+	list-style: none;
+	display: inline;
+}
+
+nav li a {
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 1rem .5rem;
+}
+
+.bavalore_header {
+	position: fixed;
+	width: 100%;
+}

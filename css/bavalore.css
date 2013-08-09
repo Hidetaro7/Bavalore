@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 599px) {
+  /*.bavalore_header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    -webkit-transition: top .2s;
+    -moz-transition: top .2s;
+    -ms-transition: top .2s;
+    transition: top .2s;
+  }*/
+	.bavalore_header {
+		overflow: hidden;
+	}
+	
+  .bavalore_header canvas {
+    background-color: transparent;
+  }
+  .bavalore_header .wrapper {
+    position: absolute;
+		width: 100%;
+    top: -60px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    transition: .3s;
+    z-index: -1;
+  }
+  .bavalore_header .drawer_header {
+    position: relative;
+  }
+  /*body.drawer_active*/
+  .drawer_active .bavalore_header canvas {
+    background-color: rgba(255, 255, 255, .7);
+  }
+  .drawer_active .bavalore_header .wrapper {
+    top: 0;
+    z-index: 1;
+  }
+  .drawer_btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  }
+  .drawer_btn span {
+    display: block;
+    float: right;
+    width: 34px;
+    height: 24px;
+    background: url(/img/btn_drawer_active.svg) 0 0 no-repeat;
+  }
+  .drawer_active .drawer_btn span {
+    opacity: 1;
+    background: url(/img/btn_drawer_deactive.svg) 0 0 no-repeat;
+  }
+  .drawer_active .drawer_btn {
+    z-index: 1;
+  }
+	
+  /* if Android */
+  .Android .bavalore_header {
+    top: 0;
+    left: 0;
+  }
+  .Android .bavalore_header .wrapper {
+    width: 74px;
+    position: absolute;
+    left: -75px;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    background-color: #b81c22;
+  }
+  .Android .bavalore_header .wrapper .drawer_menu {
+    margin-bottom: 0;
+  }
+  .Android .bavalore_header .wrapper li a i {
+    display: inline-block;
+  }
+  .Android .bavalore_header .wrapper li a span {
+    display: inline-block;
+  }
+  .Android .drawer_active .bavalore_header .wrapper {
+    left: 0;
+  }
+
+}
